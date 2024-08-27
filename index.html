@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <!-- Insertar Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Conectar CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Conectar Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ingrese el texto aquí</h1>
+        </header>
+        
+        <main>
+            <textarea id="texto" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+            <small id="validation-msg" style="display:none; color: red;">No se aceptan mayúsculas ni caracteres especiales.</small>
+            <div class="buttons">
+                <button id="btn-encriptar"><i class="fas fa-lock"></i> Encriptar</button>
+                <button id="btn-desencriptar"><i class="fas fa-lock-open"></i> Desencriptar</button>
+            </div>
+        </main>
+        
+        <aside>
+            <div id="message-container" class="no-message">
+                <img src="images/no-message.png" alt="Ningún mensaje fue encontrado">
+                <p id="message-output">Ningún mensaje fue encontrado</p>
+                <small>Ingresa el texto que desees encriptar o desencriptar.</small>
+                <button id="btn-copiar"><i class="fas fa-copy"></i> Copiar</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Creado por [Tu Nombre] - 2024</p>
+    </footer>
+
+    <!-- Conectar JS -->
+    <script src="script.js"></script>
+</body>
+</html>

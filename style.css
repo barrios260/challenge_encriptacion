@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicar la nueva tipografía */
+    background-color: #F5F5F5; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2D2D2D; /* Color de texto principal */
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    background-color: #EDEDED;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #2D2D2D;
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega transición para animación */
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #1D1D1D;
+    transform: scale(1.05); /* Animación de escala */
+}
+
+aside {
+    flex: 2;
+    background-color: #F0F4F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.no-message {
+    text-align: center;
+}
+
+.no-message img {
+    width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Animación de imagen */
+}
+
+.no-message img:hover {
+    transform: scale(1.05); /* Animación al pasar el cursor sobre la imagen */
+}
+
+#message-container {
+    display: none;
+    text-align: center;
+}
+
+#message-container.active {
+    display: block;
+}
+
+#btn-copiar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-copiar:hover {
+    background-color: #45A049;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #EDEDED;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
