@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Aplicar la nueva tipografía */
-    background-color: #F5F5F5; /* Color de fondo */
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #2D2D2D; /* Color de texto principal */
+    color: #2D2D2D;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -36,8 +36,16 @@ h1 {
 }
 
 main {
-    flex: 3;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.input-area {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 textarea {
@@ -47,18 +55,17 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     resize: none;
-    font-family: Arial, sans-serif;
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     color: #FFFFFF;
     background-color: #2D2D2D;
     border: none;
@@ -66,7 +73,7 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega transición para animación */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button i {
@@ -75,17 +82,24 @@ button i {
 
 button:hover {
     background-color: #1D1D1D;
-    transform: scale(1.05); /* Animación de escala */
+    transform: scale(1.05);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 aside {
-    flex: 2;
+    flex: 1;
     background-color: #F0F4F8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    max-width: 300px;
 }
 
 .no-message {
@@ -93,32 +107,13 @@ aside {
 }
 
 .no-message img {
-    width: 100px;
+    width: 150px; /* Imagen más grande */
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Animación de imagen */
-}
-
-.no-message img:hover {
-    transform: scale(1.05); /* Animación al pasar el cursor sobre la imagen */
-}
-
-#message-container {
-    display: none;
-    text-align: center;
-}
-
-#message-container.active {
-    display: block;
 }
 
 #btn-copiar {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
+    margin-left: 0;
     background-color: #4CAF50;
-    color: #FFF;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 #btn-copiar:hover {
@@ -131,8 +126,6 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #EDEDED;
-    position: fixed;
-    bottom: 0;
 }
 
 footer p {
@@ -140,4 +133,3 @@ footer p {
     font-size: 14px;
     color: #777;
 }
-

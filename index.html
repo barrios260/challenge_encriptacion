@@ -18,26 +18,30 @@
         </header>
         
         <main>
-            <textarea id="texto" rows="6" placeholder="Ingrese el texto aquí"></textarea>
-            <small id="validation-msg" style="display:none; color: red;">No se aceptan mayúsculas ni caracteres especiales.</small>
-            <div class="buttons">
-                <button id="btn-encriptar"><i class="fas fa-lock"></i> Encriptar</button>
-                <button id="btn-desencriptar"><i class="fas fa-lock-open"></i> Desencriptar</button>
+            <div class="content-area">
+                <div class="input-area">
+                    <textarea id="texto" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="buttons">
+                        <button id="btn-copiar"><i class="fas fa-copy"></i> Copiar</button>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-encriptar"><i class="fas fa-lock"></i> Encriptar</button>
+                    <button id="btn-desencriptar"><i class="fas fa-lock-open"></i> Desencriptar</button>
+                </div>
             </div>
+            <aside>
+                <div id="message-container" class="no-message">
+                    <img src="image.png" alt="Ningún mensaje fue encontrado">
+                    <p id="message-output">hola</p>
+                    <small>Ingresa el texto que desees encriptar o desencriptar.</small>
+                </div>
+            </aside>
         </main>
         
-        <aside>
-            <div id="message-container" class="no-message">
-                <img src="image.png" alt="Ningún mensaje fue encontrado">
-                <p id="message-output">Ningún mensaje fue encontrado</p>
-                <small>Ingresa el texto que desees encriptar o desencriptar.</small>
-                <button id="btn-copiar"><i class="fas fa-copy"></i> Copiar</button>
-            </div>
-        </aside>
-    </div>
 
     <footer>
-        <p>Creado por [Tu Nombre] - 2024</p>
+        <p>Creado por [EMANUEL BARRIOS C.] - 2024</p>
     </footer>
 
     <!-- Conectar JS -->
