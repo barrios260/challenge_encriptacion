@@ -87,9 +87,23 @@ button:hover {
 
 .action-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: flex-start; /* Alinea los botones al principio */
+    gap: 15px; /* Espacio horizontal entre los botones */
+    margin-top: 20px; /* Espacio para bajar los botones respecto al botón de copiar */
 }
+
+.action-buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    max-width: 300px;
+}
+
 
 aside {
     flex: 1;
